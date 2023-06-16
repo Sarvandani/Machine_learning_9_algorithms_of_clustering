@@ -254,7 +254,7 @@ Data.info()
     dtypes: float64(1), int64(25), object(3)
     memory usage: 507.6+ KB
 
-
+---------------
 
 ```python
 #checking missing values
@@ -334,7 +334,7 @@ sns.heatmap(df.isnull(), cmap= 'PiYG', cbar=False, yticklabels=False, xticklabel
 ![png](clustering_algo_files/clustering_algo_5_1.png)
     
 
-
+----------------------------
 
 ```python
 # feature engineering :  
