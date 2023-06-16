@@ -643,7 +643,7 @@ plt.show()
     
 ![png](clustering_algo_files/clustering_algo_13_0.png)
     
-
+1. K-means Clustering: One of the most widely used clustering algorithms. It partitions the data into K clusters by minimizing the sum of squared distances between data points and the centroid of each cluster.
 
 
 ```python
@@ -714,7 +714,7 @@ sns.pairplot( data_cluster_with_kmean[ best_cols ], hue="cluster",palette='Accen
 ![png](clustering_algo_files/clustering_algo_16_1.png)
     
 
-
+2. Hierarchical Clustering: This algorithm builds a hierarchy of clusters by either bottom-up (agglomerative) or top-down (divisive) approaches.
 
 ```python
 ## method: AgglomerativeClustering
@@ -800,7 +800,7 @@ sns.pairplot( data_agg_clustering[ best_cols ], hue="cluster",palette='Accent')
     
 ![png](clustering_algo_files/clustering_algo_20_1.png)
     
-
+3. Spectral Clustering: This approach combines graph theory and matrix decomposition techniques to perform clustering. It constructs a similarity graph and performs clustering based on the eigenvectors or spectral properties of the graph.
 
 
 ```python
@@ -849,8 +849,7 @@ sns.pairplot( data_Spectral[ best_cols ], hue="cluster",palette='Accent')
     
 ![png](clustering_algo_files/clustering_algo_22_1.png)
     
-
-
+4. DBSCAN (Density-Based Spatial Clustering of Applications with Noise): This algorithm groups together data points that are closely packed and separates sparse regions. It can find clusters of arbitrary shapes and identify noise points.
 
 ```python
 ## method: dbscan
@@ -940,7 +939,7 @@ sns.pairplot(data_dbscan[best_cols], hue="cluster",palette='Accent')
 ![png](clustering_algo_files/clustering_algo_26_1.png)
     
 
-
+5. Affinity Propagation: It uses a "message-passing" mechanism to determine exemplars among the data points. Exemplars are chosen as representatives of clusters and propagate their influence on other data points.
 
 ```python
 ## method: AffinityPropagation
@@ -1012,7 +1011,7 @@ sns.pairplot(data_affinity_propagation[ best_cols ], hue="cluster",palette='Acce
 ![png](clustering_algo_files/clustering_algo_29_1.png)
     
 
-
+6. OPTICS (Ordering Points to Identify the Clustering Structure): Similar to DBSCAN, this algorithm identifies clusters based on density-connected points. It also provides a hierarchical representation of the clusters.
 
 ```python
 # method OPTICS
@@ -1080,6 +1079,7 @@ sns.pairplot(data_optics [ best_cols ], hue="cluster",palette='Accent')
 ![png](clustering_algo_files/clustering_algo_32_1.png)
     
 
+7. Gaussian Mixture Models (GMM): This algorithm assumes that the data points are generated from a mixture of Gaussian distributions. It estimates the parameters of the Gaussian components to assign data points to clusters.
 
 
 ```python
@@ -1148,7 +1148,7 @@ sns.pairplot(data_gmm [ best_cols ], hue="cluster",palette='Accent')
 ![png](clustering_algo_files/clustering_algo_35_1.png)
     
 
-
+8. Mean Shift Clustering: It identifies clusters by locating modes of the data density function. The algorithm iteratively shifts the center of each cluster towards the region of highest data density.
 
 ```python
 ## method MeanShift
@@ -1216,8 +1216,9 @@ sns.pairplot(data_ms [ best_cols ], hue="cluster",palette='Accent')
 
     
 ![png](clustering_algo_files/clustering_algo_38_1.png)
-    
-
+  
+  
+9. Birch (Balanced Iterative Reducing and Clustering using Hierarchies): This algorithm creates a hierarchical clustering structure with a tree-like branching structure. It is suitable for large datasets as it employs memory-efficient techniques.
 
 
 ```python
