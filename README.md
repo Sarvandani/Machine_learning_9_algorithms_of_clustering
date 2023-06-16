@@ -1288,3 +1288,4 @@ sns.pairplot(data_birch [ best_cols ], hue="cluster",palette='Accent')
 ![png](clustering_algo_files/clustering_algo_41_1.png)
     
 
+Reference: Some Information was provided by ChatGPT
