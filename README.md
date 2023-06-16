@@ -1,5 +1,5 @@
 ```python
-##link of data: https://www.kaggle.com/code/karnikakapoor/customer-segmentation-clustering/input
+
 #Importing the Libraries
 import numpy as np
 import pandas as pd
