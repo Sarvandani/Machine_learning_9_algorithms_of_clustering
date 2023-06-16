@@ -30,7 +30,7 @@ if not sys.warnoptions:
 np.random.seed(42)
 ```
 -----------------------
-
+-----------------------
 ```python
 #Loading the dataset
 #reading data
